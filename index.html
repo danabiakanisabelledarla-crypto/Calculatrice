@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculatrice Scientifique</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div id="calculator">
+      <h2>Scientific Calculator</h2>
+      <div id="display">0</div>
+
+      <!-- bouton sous l'écran -->
+      <button id="science-toggle">Mode Scientifique</button>
+
+      <div id="buttons">
+        <button data-action="7">7</button>
+        <button data-action="8">8</button>
+        <button data-action="9">9</button>
+        <button data-action="÷">÷</button>
+
+        <button data-action="4">4</button>
+        <button data-action="5">5</button>
+        <button data-action="6">6</button>
+        <button data-action="×">×</button>
+
+        <button data-action="1">1</button>
+        <button data-action="2">2</button>
+        <button data-action="3">3</button>
+        <button data-action="-">-</button>
+
+        <button data-action="0">0</button>
+        <button data-action=".">.</button>
+        <button data-action="=">=</button>
+        <button data-action="+">+</button>
+
+        <button data-action="ac">AC</button>
+        <button data-action="del">DEL</button>
+      </div>
+    </div>
+
+    <!-- tableau scientifique caché par défaut -->
+    <div id="science-panel" class="hidden">
+      <button data-func="sin">sin</button>
+      <button data-func="cos">cos</button>
+      <button data-func="tan">tan</button>
+      <button data-func="log">log</button>
+      <button data-func="exp">exp</button>
+      <button data-func="sqrt">√</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
