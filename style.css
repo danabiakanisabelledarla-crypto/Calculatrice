@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(145deg, #1e1e2e, #2b2b3c);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Boîte principale */
+#calculator {
+  background: #2d2f36;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00000080;
+  text-align: center;
+}
+
+#display {
+  background: #000;
+  color: lime;
+  text-align: right;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  min-width: 220px;
+}
+
+#science-toggle {
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#science-toggle:hover {
+  background: #0056b3;
+}
+
+/* Boutons normaux */
+#buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 8px;
+  justify-content: center;
+}
+
+button {
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #666;
+}
+
+/* Tableau scientifique */
+#science-panel {
+  background: #2d2f36;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000080;
+  display: grid;
+  grid-template-columns: repeat(2, 70px);
+  gap: 10px;
+  align-content: start;
+}
+
+/* ✅ CACHE VRAIMENT LE PANNEAU */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
